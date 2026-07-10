@@ -1,0 +1,43 @@
+.text-status {
+    margin: 0;
+}
+.card-text{
+     font-size: 16px;
+    font-weight: 600;
+}
+
+/* สำคัญ: ทำเป็น badge สวย */
+.status-success,
+.status-warning,
+.status-info {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 999px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,.3);
+}
+
+/* สีเขียว */
+.status-success {
+    background: rgba(16, 185, 129, 0.15);
+    color: #059669;
+}
+
+/* สีเหลือง */
+.status-warning {
+    background: rgba(245, 158, 11, 0.15);
+    color: #d97706;
+}
+
+/* สีฟ้า */
+.status-info {
+    background: rgba(59, 130, 246, 0.15);
+    color: #2563eb;
+}
