@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Sarabun', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.loading-screen {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(circle at top left,
+            #c7d2fe,
+            transparent 40%),
+        radial-gradient(circle at bottom right,
+            #bfdbfe,
+            transparent 40%),
+        #f8fafc;
+}
+
+.loading-screen .logo {
+    font-size: 80px;
+    margin-bottom: 20px;
+
+    animation: float 2s ease-in-out infinite;
+}
+
+.loading-screen h2 {
+    margin: 0;
+    color: #0f172a;
+}
+
+.loading-screen p {
+    color: #64748b;
+}
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}

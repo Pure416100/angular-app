@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <div class="text-header mb-3">รายการรถ</div>
+  <div class="row">
+    <div *ngFor="let item of aa" class="col-md-3 mb-3">
+      <div class="card mb-3">
+        <img
+  src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+  class="card-img-top"
+  alt="รถ"
+/>
+        <div class="card-body">
+          <h5 class="card-title">{{ item.brand }}</h5>
+          <p class="card-text">{{ item.vehicleNo }}</p>
+         <p
+  class="text-status"
+  [ngClass]="{
+    'status-success': item.status === 'พร้อมใช้งาน',
+    'status-warning': item.status === 'ซ่อมบำรุง',
+    'status-info': item.status === 'รอตรวจสอบ'
+  }"
+>
+  <small class="text-body-secondary">
+    {{ item.status }}
+  </small>
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
